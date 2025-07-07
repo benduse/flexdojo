@@ -1,5 +1,6 @@
 // src/components/Navigation/Navigation.jsx
 import React from 'react';
+import styles from './Navigation.module.css';
 
 export function Navigation() {
   const navItems = [

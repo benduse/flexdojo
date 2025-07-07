@@ -1,5 +1,6 @@
 // src/components/BeltIndicator/BeltIndicator.jsx
 import React from 'react';
+import styles from './BeltIndicator.module.css';
 
 const BELT_CONFIG = {
   white: {

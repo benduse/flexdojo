@@ -1,5 +1,6 @@
 import React from 'react';
 import { BeltIndicator } from '../BeltIndicator';
+import styles from './Header.module.css';
 
 export function Header() {
   return (
