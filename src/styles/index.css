@@ -1,45 +1,58 @@
 /* src/styles/index.css */
-@import './variables.css';
-@import './reset.css';
+/* CSS Variables */
+:root {
+  /* Colors */
+  --color-dojo-purple: #7C3AED;
+  --color-dojo-orange: #F97316;
+  --color-dojo-dark: #111827;
+  --color-dojo-darker: #0F172A;
+  
+  /* Belt Colors */
+  --color-belt-white: #F9FAFB;
+  --color-belt-yellow: #FCD34D;
+  --color-belt-orange: #FB923C;
+  --color-belt-green: #4ADE80;
+  --color-belt-blue: #3B82F6;
+  --color-belt-brown: #92400E;
+  --color-belt-black: #000000;
+  
+  /* Neutral Colors */
+  --color-gray-100: #F3F4F6;
+  --color-gray-400: #9CA3AF;
+  --color-gray-700: #374151;
+  --color-gray-800: #1F2937;
+}
 
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Styles */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   background-color: var(--color-dojo-dark);
   color: var(--color-gray-100);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Utility Classes */
+/* Container */
 .container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 1rem;
 }
 
-/* Scrollbar Styles */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Test styles to verify CSS is loading */
+h1 {
+  color: white;
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* Focus Styles */
-:focus {
-  outline: 2px solid var(--color-dojo-purple);
-  outline-offset: 2px;
-}
-
-/* Button Reset */
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-  font: inherit;
-  color: inherit;
+.app {
+  padding: 2rem;
+  text-align: center;
 }

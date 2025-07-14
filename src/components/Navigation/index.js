@@ -1,2 +1,2 @@
 // src/components/Navigation/index.js
-export { Navigation } from './Navigation';
+export { Navigation } from './Navigation.jsx';
